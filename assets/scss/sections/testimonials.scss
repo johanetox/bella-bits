@@ -1,0 +1,25 @@
+.testimonial {
+	&-card {
+    padding: 10px 40px;
+    border: 5px solid $gray-light;
+    margin: 0 20px;
+		color: $gray-light;
+		h3 {
+			font-style: italic;
+		}
+	}
+	&-wrapper {
+		margin-bottom: 60px;
+	}
+}
+
+@include breakpoint(mobile) {
+	.testimonial {
+		&-wrapper {
+	    max-width: 100%;
+			overflow-x: scroll;
+			padding-bottom: 20px;
+			margin-bottom: 30px;
+		}
+	}
+}

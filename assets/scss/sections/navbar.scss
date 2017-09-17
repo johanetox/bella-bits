@@ -1,0 +1,35 @@
+.navbar {
+	background-color: white;
+	height: 96px;
+  &-wrapper {
+  	width: 100%;
+		max-width: 1024px;
+  	margin: 0 auto;
+  	.nav-item {
+  		padding-left: 10px;
+    	padding-right: 10px;
+  	}
+  }
+  &-brand {
+  	h2 {
+  		color: $gray-main;
+  	}
+  }
+}
+
+@include breakpoint(mobile) {
+	.navbar {
+		height: 60px;
+		&-collapse {
+			width: 100%;
+		}
+		&-nav {
+			position: relative;
+	    top: 60px;
+	    right: 0;
+	    background-color: white;
+	    text-align: right;
+	    padding: 10px 20px;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+/* bootstrap trae con sigo normalizer, no hay necesidad de añadrir un css reset */
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+	section {
+		&:not(.carousel-wrapper) {
+			max-width: 1024px;
+			margin: 0 auto;
+	    padding: 100px 0 40px;
+		}
+		&.features {
+			padding-top: 140px;
+		}
+		.title {
+			padding-bottom: 70px;
+			text-align: center;
+		}
+	}
+	.relative {
+  	position: relative;
+  }
+	label.error {
+    position: absolute;
+    width: 220px;
+    top: 35px;
+    left: 0px;
+    padding: 7px 15px;
+    background-color: $pink;
+    border-radius: 0 0 5px 5px;
+    font-size: 0.8rem;
+    color: white;
+	}
+}
+
+@include breakpoint(mobile) {
+	body {
+		section {
+			&:not(.carousel-wrapper) {
+		    padding: 50px 0 40px;
+			}
+			&.features {
+				padding-top: 80px;
+			}
+		}
+	}
+	.hide-mobile {
+    display: none;
+  }
+}
+
+div::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+div::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: transparent;
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: $grayish-blue;
+  border: 1px solid $grayish-blue;
+  border-radius: 2px;
+  box-shadow: 0 0 6px transparentize($grayish-blue, .8);
+}

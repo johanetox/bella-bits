@@ -1,0 +1,16 @@
+.footer {
+  background-color: $grayish-blue;
+  padding: 80px 0;
+  &-wrapper {
+  	max-width: 1024px;
+  	margin: 0 auto;
+  }
+}
+
+@include breakpoint(mobile) {
+	.list-inline {
+	  display: flex;
+	  text-align: center;
+	  flex-direction: column;
+	}
+}

@@ -1,0 +1,53 @@
+.c-button {
+  background-color: $pink;
+  padding: 15px 80px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.3rem;
+  font-family: $font-family-light;
+  letter-spacing: 1px;
+  .right-arrow {
+    position: relative;
+    width: 19px;
+    bottom: 1px;
+    margin-left: 8px;
+  }
+  &:focus {
+  	outline: none;
+  }
+  &-sm {
+  	padding: 10px 40px;
+    font-size: 1.1rem;
+  }
+  &-transparent {
+    font-family: $font-family-bold;
+    color: $gray-main;
+    transition: all 0.3s ease-in-out;
+    .right-arrow {
+      position: relative;
+      bottom: 2px;
+      margin-left: 8px;
+    }
+    &:hover {
+      color: $gray-dark
+    }
+  }
+  &-inline {
+    img {
+      padding-left: 8px;
+      margin-bottom: 3px;
+    }
+  }
+  &:hover {
+    box-shadow: -2px 2px 5px transparentize($pink, 0.6)
+  }
+}
+
+@include breakpoint(mobile) {
+  .c-button {
+    padding: 10px 35px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+}

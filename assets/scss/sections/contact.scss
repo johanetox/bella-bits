@@ -1,0 +1,91 @@
+.contact {
+  z-index: 9999;
+  position: absolute;
+	&-layer {
+		display: none;
+  	width: 100%;
+	  background-color: transparentize($gray-dark, 0.5);
+	  height: 100vh;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  cursor: pointer;
+	  transition: all 0.4s ease-in-out;
+	}
+	&-wrapper {
+	  position: fixed;
+	  background-color: $gray-dark;
+	  width: 320px;
+	  top: 5%;
+	  right: -320px;
+	  .title {
+	  	padding: 40px 0;
+	  	h2 {
+	  		letter-spacing: -1px;
+	  	}
+	  }
+	  .custom-select {
+	  	width: 100px;
+	    border: none;
+	    border-radius: 0;
+	    background-image: url("../images/icons/down-arrow.svg");
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    background-repeat: no-repeat;
+	    background-size: 14px;
+		}
+	  .vertical-cta {
+	    position: absolute;
+	    top: 50%;
+	    left: -45px;
+	    transform: rotate(-90deg);
+	    transform-origin: left top;
+	    background-color: darken($gray-dark, 20%);
+	    padding: 11px 20px;
+	    color: white;
+	    cursor: pointer;
+		}
+	}
+	&-close {
+		cursor: pointer;
+		padding: 35px 0 0 25px;
+	}
+	&-form {
+    position: relative;
+    max-width: 220px;
+    margin: 0 auto;
+    .input {
+	    width: 100%;
+	    border: none;
+	    height: 35px;
+	    padding-left: 15px;
+	    &-button {
+	    	position: absolute;
+		    right: 15px;
+		    top: 4px;
+	    }
+		}
+		.date {
+			position: relative;
+		}
+	}
+}
+
+@include breakpoint(mobile) {
+	.contact {
+		&-wrapper {
+			top:0;
+			bottom: 0;
+			.title {
+				padding: 20px 0 35px;
+			}
+			.vertical-cta {
+		    top: 75%;
+			}
+		}
+		&-close {
+			padding: 20px 0 0 20px;
+		}
+	}
+}

@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'robotobold';
+  src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotolight';
+  src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body, button, input, optgroup, select, textarea, * {
+	font-family: $font-family-base;
+	color: $gray-main;
+}
+
+.l-font { font-family: $font-family-light }
+
+.b-font { font-family: $font-family-bold }
+
+a, button, select, input {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover { color: $gray-dark }
+
+h1 { font-size: 3.5rem }
+h2 { font-size: 2.6rem }
+h3 { font-size: 2rem }
+h4 { font-size: 1.6rem }
+h5 { font-size: 1.2rem; line-height: 2rem; }
+h6, input, select { font-size: 0.9rem }
+
+.text-center { text-align: center }
+
+.white-f { color: white }
+
+.gray-f { color: $gray-main }
+.gray-l-f { color: $gray-light }
+
+@include breakpoint(mobile) {
+  h1 { font-size: 2.5rem }
+  h2 { font-size: 2rem }
+  h3 { font-size: 1.6rem }
+  h4 { font-size: 1.4rem }
+  h5 { font-size: 1.1rem; line-height: 1.5rem; }
+  h6, input, select { font-size: 0.9rem }
+}
