@@ -1,5 +1,7 @@
 # Bella Email Template for [Bits Americas](http://www.bitsamericas.com)
 
+Demo preview on [bitsbella.surge.sh](http://bitsbella.surge.sh)
+
 ## How to view it
 
 * double click on `index.html` (Can be opened offline, CDN were used)
